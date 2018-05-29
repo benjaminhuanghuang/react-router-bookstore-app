@@ -9,10 +9,7 @@ const { hashHistory,
     IndexLink
 } = require('react-router');
 
-const Copy = require('./Copy');
-
-
-
+import Copy from './Copy';
 
 class Index extends React.Component {
     render() {

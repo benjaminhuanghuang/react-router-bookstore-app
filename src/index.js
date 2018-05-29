@@ -1,19 +1,16 @@
-const React = require('react')
-const ReactDOM = require('react-dom')
-const { hashHistory,
-    Router,
-    Route,
-    IndexRoute,
-    Link,
-    IndexLink
-} = require('react-router')
+import React from 'react'
+import ReactDOM from 'react-dom';
+import { hashHistory,
+  Router,
+  Route,
+  IndexRoute,
+  Link,
+  IndexLink
+} from 'react-router';
+
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const Modal = require('./modal.jsx')
-const Cart = require('./cart.jsx')
-const Checkout = require('./checkout.jsx')
-const Product = require('./product.jsx')
 
 ReactDOM.render((
     <Router history={hashHistory}>
