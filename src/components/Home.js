@@ -11,6 +11,8 @@ const { hashHistory,
 
 import Copy from './Copy';
 
+import PRODUCTS from '../data/products';
+
 class Index extends React.Component {
     render() {
         return (

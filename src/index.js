@@ -1,19 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { hashHistory,
-  Router,
-  Route,
-  IndexRoute,
-  Link,
-  IndexLink
-} from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render((
-    <Router history={hashHistory}>
+    <BrowserRouter>
         <Route path="/" component={App}>
             <IndexRoute component={Index} />
             <Route path="/products/:id" component={Product}
@@ -22,7 +16,6 @@ ReactDOM.render((
             <Route path="/cart" component={Cart}
                 cartItems={cartItems} products={PRODUCTS} />
         </Route>
-        <Route path="/checkout" component={Checkout}
-            cartItems={cartItems} products={PRODUCTS} />
-    </Router>
+        <Route path="/checkout" component={Checkout} cartItems={cartItems} products={PRODUCTS} />
+    </BrowserRouter>
 ), document.getElementById('content'))
